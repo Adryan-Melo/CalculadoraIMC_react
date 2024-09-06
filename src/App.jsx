@@ -19,7 +19,7 @@ const calcularImc =() => {
 const obterCategoriaIMC = () => {
   const imc = parseFloat(calcularImc().replace(',', '.'));
   if (isNaN(imc)) {
-    return 'Insira suas informações';
+    return 'Insira suas informações para saber sua classificação';
 
   } else if (imc <= 18.5) {
     return 'Abaixo do normal';
